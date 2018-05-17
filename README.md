@@ -1,10 +1,9 @@
 # Arquitectura de Computadoras 2018
+
 ## Integrantes:
 	*Villarreal Luciano (@lvillarreal)
 	*Postemsky Marcos (@marcospostemsky)
 
-## Trabajo Práctico Nº2 
-El Release TP2 contiene cada uno de los archivos que corresponden a dicho práctico. Puede encontrarse en el [link-TP2](https://github.com/LMproyects/ArqComp2018/releases/tag/TP2)
 
 ## Banco de registros
 Dentro de la carpeta src "bank_reg.vhd" describe el comportamiento del banco de registros, y dentro de la carpeta test_src se encuentra "bank_reg_tb.vhd", vhdl que describe el Test Bench utilizado para comprobar el funcionamiento del banco de registros.
@@ -18,3 +17,16 @@ Entradas  | Comportamiento del banco de registros
 --------  | -------------------------------------
 Reg_W_i=0 | A la salida se tienen los registros de 64 bits ubicados en la dirección A y B.
 Reg_W_i=1 | Igual que Reg_W_i=0, y además escribe en la dirección C, el dato de 64 bits ingresado por W_c_i.
+
+### Definicion de puertos del bloque
+Se definen 2 variables genéricas: 
+**n_reg y bit_dir_reg.** 
+Se las inicializa con los valores 64 y 5 respectivamente.
+
+Puerto | Descripción
+-------|-----------
+A_i, B_i, C_i | Entradas de _bit_dir_reg_ bits.
+Reg_W_i, CLK_i | Entradas de 1 bit.
+W_c_i | Entrada de _n_dir_ bits.
+R_a_o, R_b_o | Salidas de _n_dir_ bits.
+
