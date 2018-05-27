@@ -1,8 +1,8 @@
 # Arquitectura de Computadoras 2018
 
 ## Integrantes:
-	*Villarreal Luciano (@lvillarreal)
-	*Postemsky Marcos (@marcospostemsky)
+* Villarreal Luciano (@lvillarreal)
+* Postemsky Marcos (@marcospostemsky)
 
 
 ## Banco de registros
