@@ -30,7 +30,7 @@ ARCHITECTURE Behavioral OF ImmGen_tb IS
 	
 BEGIN
 	
-	uut: ImmGen generic map(len_i len_o)
+	uut: ImmGen generic map(In_width, Out_width)
 				port map(Inst_i, Inst_o, CLK_i)
 
 END ARCHITECTURE Behavioral; -- Of entity ImmGen_tb
