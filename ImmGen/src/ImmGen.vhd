@@ -30,7 +30,7 @@ BEGIN
 	    		Inmed_o(10 downto 5) <= Inst_i(30 downto 25);
 	    		Inmed_o(len_o -1 downto 11) <= (OTHERS=>Inst_i(31));
 	    	
-	    	elsif Inst_i(6 downto 0) = "010011" then -- S-type
+	    	elsif Inst_i(6 downto 0) = "0100011" then -- S-type
 	    		Inmed_o(0) <= Inst_i(7);
 	    		Inmed_o(4 downto 1) <= Inst_i(11 downto 8);
 	    		Inmed_o(10 downto 5) <= Inst_i(30 downto 25);
@@ -49,7 +49,7 @@ BEGIN
 	    		Inmed_o(30 downto 20) <= Inst_i(30 downto 20);
 	    		Inmed_o(len_o - 1 downto 31) <= (others => Inst_i(31));	
 	    	
-	    	elsif Inst_i(6 downto 0) = "0110111" then  -- UJ-type 
+	    	elsif Inst_i(6 downto 0) = "1101111" then  -- UJ-type 
 	    		Inmed_o(0) <= '0';
 	    	    Inmed_o(4 downto 1) <= Inst_i(24 downto 21);
 	    		Inmed_o(10 downto 5) <= Inst_i(30 downto 25);	    		
