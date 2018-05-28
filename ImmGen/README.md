@@ -13,4 +13,16 @@ La extensión de signo es una de las operaciones más críticas en inmediatos (p
 ### Funcionamiento del bloque ImmGen
 El bloque ImmGen tiene como señal de entrada la instrucción de **32 bits** que proviene de la memoria de programa, y como salida la señal inmediata de **64 bits** con signo extendido. Se debe tener en cuenta que el valor del inmediato que contiene la instrucción depende del tipo de la misma, el siguiente cuadro describe como se conforma la señal de salida, dependiendo del tipo de instrucción.
 
-![Imagen tabla inmediato]()
+![Imagen tabla inmediato](https://github.com/LMproyects/ArqComp2018/blob/master/ImmGen/images/tabla_inmediato.png)
+
+Por último, mencionamos cuales son los opcode que referencian a cada tipo de instrucción.
+
+Tipo de Instrucción | Opcode
+--------------------|-------
+I-Type | 0000011
+I-Type | 0010011
+I-Type | 1100111
+S-Type | 0100011
+SB-Type | 1100011
+U-Type | 0110111
+UJ-Type | 1101111
