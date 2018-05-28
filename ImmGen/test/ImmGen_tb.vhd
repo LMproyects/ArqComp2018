@@ -58,7 +58,7 @@ BEGIN
 		wait for 50 ns;	
 		
 		Inst_i(6 downto 0)<= "1100111";
-		Inst_i(31 downto 20)<= "110000111111"
+		Inst_i(31 downto 20)<= "110000111111";
         --*****************************************************--
 		-- Opcode para los S-type
 		Inst_i(6 downto 0)<= "0100011";
