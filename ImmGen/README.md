@@ -17,12 +17,6 @@ El bloque ImmGen tiene como señal de entrada la instrucción de **32 bits** que
 
 Por último, mencionamos cuales son los opcode que referencian a cada tipo de instrucción.
 
-Tipo de Instrucción | Opcode
---------------------|-------
-I-Type | 0000011
-I-Type | 0010011
-I-Type | 1100111
-S-Type | 0100011
-SB-Type | 1100011
-U-Type | 0110111
-UJ-Type | 1101111
+Tipo de Instrucción | I-Type | I-Type | I-Type | S-Type | SB-Type | U-Type | UJ-Type
+**Opcode**| 0000011 | 0010011 | 1100111 | 0100011 | 1100011 | 0110111 | 1101111
+ 
